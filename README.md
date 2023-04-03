@@ -53,3 +53,12 @@ then follow the extras on the same repo to start jprq to get the SERVER_ADDRESS 
 22. you can ask anything using ask before the question `ask what is your name?`
 23. you should recieve your answer.
 24. by default, should be working on alexa, in the same email, just call the Skill invocation Name.
+
+
+## Errors
+Currently, I'm runnign this project in a rtx 3060 12gb. If you are getting "There was a problem with the requested skill's response." after waiting for a while, is because alexa can hold just for 8 secs. If the API is slower then that, will return this error.  
+
+Solutions: 
+- Reduce the number of words generated.
+- Try a model with lower parameters;
+- Try a faster strategy;
